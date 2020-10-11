@@ -86,6 +86,113 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html {
+	background: #202322;
+	color: #e2e3ed;
+}
+
+body {
+	
+}
+
+header, footer {
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	
+}
+
+header .content-wrapper{
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+header figure {
+	
+}
+
+.header-divider {
+	
+}
+
+header nav {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* ------------------ Mobile Styles | Homepage ------------------ */
+/* Hero */
+.hero-area {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+/* Sign-up Form */
+aside {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.form {
+	
+}
+
+.form-description {
+	
+}
+
+/* Features Content */
+
+.features {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.features-item-description {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+/* Reviews */
+.reviews {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+
+/* Contact */
+.contact {
+	
+}
+
+
+/* Footer */
+footer .social-icons {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+footer .social-icons p {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
 
 /* ==========================================================================
    Helper classes
