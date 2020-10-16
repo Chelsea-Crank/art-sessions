@@ -11,12 +11,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -83,17 +77,17 @@ textarea {
   resize: vertical;
 }
 
+
 /* ==========================================================================
-   Author's custom styles
+   Mobile Styles | Homepage
    ========================================================================== */
+/************************** Header, Footer, Base Styles **************************/
 html {
 	background: #202322;
 	color: #e2e3ed;
 	font-family: 'Open Sans', sans-serif;
-}
-
-body {
-	
+	font-size: 14px;
+	margin:0;
 }
 
 header, footer {
@@ -104,11 +98,18 @@ header, footer {
 	
 }
 
+/************************** Header Styles **************************/
+
+header {
+	padding: 15px 0;
+}
+
 header .content-wrapper{
 	align-items: center;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	margin: 0;
 }
 
 header figure {
@@ -116,77 +117,55 @@ header figure {
 }
 
 .header-divider {
+    color: #e2e3ed;
+	width: 100%;
+    height: 2px;
+    margin: 10px 0 20px 0;
 	
 }
 
 header nav {
 	align-items: center;
 	display: flex;
-	justify-content: center;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 60%;
 }
 
 header nav ul {
 	display: flex;
 	justify-content: space-around;
+	padding: 0;
+	width: 100%
 }
 
-h3 {
-	font-family: 'Poppins', sans-serif;
+header nav ul li{
+	font-size: 1.3em;
 	font-weight: 700;
+	list-style: none;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
-/* ------------------ Mobile Styles | Homepage ------------------ */
-/* Hero */
-.hero-area {
-	align-items: center;
-	display: flex;
-	justify-content: center;
+header nav ul li a {
+	text-decoration: none;
+    color: #e2e3ed;
 }
 
-/* Sign-up Form */
-aside {
-	align-items: center;
-	display: flex;
-	justify-content: center;
+footer {
+	flex-direction: column;
 }
 
-.form {
-	
+footer p{
+	margin: 0;
 }
 
-.form-description {
-	
+footer .content-wrapper {
+	marging: 50px 0;
+	text-align: center;
+	width: 55%;	
 }
 
-/* Features Content */
-
-.features {
-	align-items: center;
-	display: flex;
-	justify-content: center;
-}
-
-.features-item-description {
-	align-items: center;
-	display: flex;
-	justify-content: center;
-}
-
-/* Reviews */
-.reviews {
-	align-items: center;
-	display: flex;
-	justify-content: center;
-}
-
-
-/* Contact */
-.contact {
-	
-}
-
-
-/* Footer */
 footer .social-icons {
 	align-items: center;
 	display: flex;
@@ -197,6 +176,182 @@ footer .social-icons p {
 	align-items: center;
 	display: flex;
 	justify-content: center;
+}
+
+footer h3 {
+	margin: 50px 0 20px;
+}
+
+footer address {
+	font-style: normal;
+}
+
+.copyright {
+	margin: 50px 0;
+}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 2.5em;
+	margin-top: 50px;
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 2.15em;
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 1.3em;
+}
+
+p {
+	line-height: 1.3em;
+}
+
+.content-wrapper {
+	width: 90%;
+}
+
+/************************** Hero **************************/
+
+.hero-area {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+/************************** Sign-up Form **************************/
+aside {
+	align-items: center;
+	background: #527158;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+aside h3 {
+	margin-top: 30px;
+}
+
+.form {
+	margin: 20px 0 ;
+}
+
+.form-description {
+	
+}
+
+/************************** Features Content **************************/
+
+.features {
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding-top: 50px;
+}
+
+
+.features-items {
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	text-align: center;	
+}
+
+.features h2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.14em;
+	font-weight: 500;
+	margin: 0;
+}
+
+.features p {
+	margin: 0;
+}
+
+.features article {
+	width: 60%;
+	margin: 50px 0;
+	
+}
+
+.features-item-description {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+/************************** Reviews **************************/
+.reviews {
+	align-items: center;
+	background: #2a423a;
+	display: flex;
+	justify-content: center;
+	padding: 0 0 50px;
+}
+
+.reviews h2 {
+	margin: 55px 0 35px;
+}
+
+.reviews h3 {
+	width: 55%
+}
+
+
+
+/* ==================================================
+                       ABOUT PAGE
+   ================================================== */
+.mission {
+	background: #527158;
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: 50px 0 35px;
+}
+
+.mission h2 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	margin: 0 0 20px;
+}
+
+.contact-section {
+	background: #2a423a;
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: 50px 0 35px;
+}
+
+.contact-section address {
+	font-style: normal;
+}
+/* ==================================================
+                        FAQ PAGE
+   ================================================== */
+
+.faq {
+	background: #527158;
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: 25px 0 35px;
+}
+
+.faq article {
+	margin: 45px 0 0;
 }
 
 
