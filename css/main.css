@@ -224,6 +224,8 @@ footer .copyright {
 /************************** Hero **************************/
 
 .hero-area {
+	background: url('../img/hero.jpg') center no-repeat;
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
@@ -267,6 +269,8 @@ input[type=button] {
 /************************** Features Content **************************/
 
 .features {
+	background: url('../img/features-bg.jpg') center no-repeat;
+	background-size: cover;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -802,5 +806,5 @@ input[type=button] {
   h3 {
     page-break-after: avoid;
   }
-}
 
+	}
