@@ -130,6 +130,14 @@ p {
 	line-height: 1.285;
 }
 
+img {
+	width: 100%;
+}
+
+figure {
+	margin: 0;
+}
+
 address {
 	font-style: normal;
 }
@@ -159,6 +167,14 @@ header .content-wrapper{
 	flex-flow: row wrap;
 	justify-content: center;
 	margin: 0;
+}
+
+header figure {
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 }
 
 .header-divider {
@@ -227,8 +243,9 @@ footer .copyright {
 	background: url('../img/hero.jpg') center no-repeat;
 	background-size: cover;
 	display: flex;
-	justify-content: center;
 	flex-flow: row wrap;
+	justify-content: center;
+	min-height: 500px;
 }
 
 /************************** Sign-up Form **************************/
@@ -246,7 +263,7 @@ aside .form {
 
 input[type=text] {
 	box-sizing:border-box;
-    color: #2a423a;
+    color: #9d9ea4;
 	font-style: italic;
 	padding: 1em;	
 	width: 100%;
@@ -311,12 +328,15 @@ input[type=button] {
 
 .reviews h2 {
 	margin-bottom: 40px;
+	line-height: 1;
 }
 
 .reviews h3 {
 	margin: 20px 0;
 	width: 80%;
 }
+
+
 
 
 
@@ -499,10 +519,16 @@ input[type=button] {
     .header-divider {
         display: none;
     }
+	
+	header figure {
+	width: 40%;
+    }
 
 /* Hero Area */
 	
-	
+	.hero-area {
+		min-hight: 600px;
+	}
 
 /* Aside */
     aside .content-wrapper {
@@ -534,14 +560,21 @@ input[type=button] {
 
 /* Reviews */
 
-    .review article {
+    .reviews article {
         display: flex;
         justify-content: space-between;
     }
 
-    .reviews article div {
+    .reviews figure,
+	.reviews article div {
         width: 49%;
     }
+	
+	.reviews h3 {
+		margin: 0;
+	}
+	
+	
 
 /* Footer */	
 
@@ -623,10 +656,7 @@ input[type=button] {
 @media only screen and (min-width: 1200px) {
 /******************Desktop styles here/******************/
 	
-    header {
-		padding: 15px 0;
-    }
-	
+    
     .content-wrapper {
         max-width: 960px;
 	}
@@ -645,8 +675,16 @@ input[type=button] {
         line-height: 1.333;
     }
 	
+	header {
+		padding: 15px 0;
+    }
+	
 	header nav {
         width: 20%;
+    }
+	
+	header figure {
+	width: 30%;
     }
 	
 /* Hero Area */
