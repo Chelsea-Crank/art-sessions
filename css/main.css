@@ -126,7 +126,7 @@ h3 {
 }
 
 p {
-	font-size : .875;
+	font-size : .875em;
 	line-height: 1.285;
 }
 
@@ -210,41 +210,45 @@ header nav ul li{
 }
 
 footer {
-	flex-direction: column;
-	text-align: center;
+  text-align: center;
+  flex-direction: column;
 }
 
-footer p{
-	margin: 0;
+footer p {
+  margin: 0;
 }
 
 footer .content-wrapper {
-	marging: 50px 0;
-	width: 45%;	
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
-	align-items: center;
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 footer .social-icons p {
-	align-items: center;
-    background-color: #527158;
-    border-radius: 50%;
-	display: flex;
-	height: 40px;
-	justify-content: center;
-	width: 40px;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .social-icons p i {
-	font-size: 1.3125;
+  font-size: 1.3125em;
 }
 
 footer .copyright {
-	margin: 20px 0;
+  margin: 20px 0;
 }
 
 
@@ -561,7 +565,7 @@ input[type=button] {
 /* Hero Area */
 	
 	.hero-area {
-		min-hight: 600px;
+		min-height: 600px;
 	}
 
 /* Aside */
@@ -613,21 +617,16 @@ input[type=button] {
 /* Footer */	
 
   footer .content-wrapper {
-    width: 100%;
+    width: 65%;
     margin: 100px 0;
   }
 
   footer .footer-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
-	
-  footer .contact,
-  footer .social 	{
-		width: 30%,
-	}
 
   footer .contact {
     margin-bottom: 0;
@@ -650,6 +649,7 @@ input[type=button] {
   footer .copyright {
     width: 100%;
   }
+
 
 
 	
@@ -769,7 +769,7 @@ input[type=button] {
 			
 /* Reviews */
 	
-	.revies h2 {
+	.reviews h2 {
 		padding-bottom: 50px;
 	}
 	
@@ -900,5 +900,5 @@ input[type=button] {
   h3 {
     page-break-after: avoid;
   }
-
-}
+	
+	}
