@@ -178,6 +178,7 @@ header figure {
 }
 
 .header-divider {
+	background: #3A3A3A;
     color: #e2e3ed;
     height: 1px;
     margin: 10px 0 20px 0;
@@ -195,6 +196,8 @@ header nav {
 header nav ul {
 	display: flex;
 	justify-content: space-around;
+	margin: 0;
+	padding: 0;
 	width: 100%
 }
 
@@ -631,8 +634,9 @@ input[type=button] {
         width: 45%;		
     }
       
-    .contact-section .content-wrapper h2 {
-        width: 80%;
+    .content-wrapper h2 {
+		font-size: 2.25em;
+        width: 75%;
     }
 	
     .contact-content {
@@ -644,7 +648,10 @@ input[type=button] {
 	.contact-content h3 {
 		font-size: 1.5em;
 	}
-		
+	
+	.map figure {
+		padding-bottom: 25%;
+	}
 	
     /* ==========================================================================
      FAQ Page
@@ -662,13 +669,7 @@ input[type=button] {
         width: 100%
     }
 	
-	
-	.faq h3,
-	.faq p {
-		font-size: .875em;
-		line-height: 1.2;
-	
-}
+
 
 @media only screen and (min-width: 1200px) {
 /******************Desktop styles here/******************/
@@ -761,6 +762,7 @@ input[type=button] {
 	}
 	
 	
+	
  /* ==========================================================================
  FAQ Page
  ========================================================================== */
@@ -769,11 +771,10 @@ input[type=button] {
 		width: 100%;
 		font-size: 3em;
 	}
-	
 	.faq h3,
 	.faq p {
 		font-size: 1.125em;
-		line-height: 1;
+		line-height: 1.3;
 	}
 	
     
