@@ -231,8 +231,16 @@ footer .social-icons {
 
 footer .social-icons p {
 	align-items: center;
+    background-color: #527158;
+    border-radius: 50%;
 	display: flex;
+	height: 40px;
 	justify-content: center;
+	width: 40px;
+}
+
+footer .social-icons p i {
+	font-size: 1.3125;
 }
 
 footer .copyright {
@@ -604,26 +612,41 @@ input[type=button] {
 
 /* Footer */	
 
-    footer .content-wrapper {
-        width: 65%;
-        margin: 100px 0;
-    }
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
 
-    .footer-content {
-        align-items: baseline;
-        display: flex;
-        justify-content: space-between;	
-    }
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
 
-    footer .contact, footer .social {
-        margin-bottom: 0;
-        flex-basis: 50%
-    }
+  footer .contact {
+    margin-bottom: 0;
+  }
 
-    footer .copyright {
-        width: 100%;
-    }
-	
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+      line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+  
+  footer .copyright {
+    width: 100%;
+  }
+
+
 	
     /* ==========================================================================
      About Page
@@ -749,8 +772,12 @@ input[type=button] {
 		width: 42%;
 	}
 	
+/* Footer*/	
+	
+
 	footer h3 {
 		font-size: 1.875em;
+		margin-bottom: 40px;
 	}
 	
 /* ==========================================================================
@@ -869,4 +896,4 @@ input[type=button] {
     page-break-after: avoid;
   }
 
-	}
+}
