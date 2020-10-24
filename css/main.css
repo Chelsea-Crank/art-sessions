@@ -220,7 +220,7 @@ footer p{
 
 footer .content-wrapper {
 	marging: 50px 0;
-	width: 55%;	
+	width: 45%;	
 }
 
 footer .social-icons {
@@ -613,16 +613,21 @@ input[type=button] {
 /* Footer */	
 
   footer .content-wrapper {
-    width: 65%;
+    width: 100%;
     margin: 100px 0;
   }
 
   footer .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
   }
+	
+  footer .contact,
+  footer .social 	{
+		width: 30%,
+	}
 
   footer .contact {
     margin-bottom: 0;
